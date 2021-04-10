@@ -5,7 +5,6 @@ import {
   Switch,
   Route,
   Link,
-  useRouteMatch,
   useParams
 } from "react-router-dom";
 
@@ -30,13 +29,14 @@ function App() {
         </ul>
 
         <Switch>
-          <Route path="/:id" children={<Child />} />
+          <Route path="/:id">
+            <Child />
+          </Route>
         </Switch>
       </div>
     </Router>
   );
 }
-
 
 function Child() {
   // We can use the `useParams` hook here to access
@@ -49,6 +49,5 @@ function Child() {
     </div>
   );
 }
-
 
 export default App;
