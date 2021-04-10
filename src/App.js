@@ -4,11 +4,11 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
   useParams
 } from "react-router-dom";
 //import Home from './views/Home'
 import Home from './views/Home'
+import Videos from './components/Videos'
 
 function App() {
   return (
@@ -16,18 +16,7 @@ function App() {
       <div>
         <h2>Videos</h2>
         <ul>
-          <li>
-            <Link to="/netflix">Netflix</Link>
-          </li>
-          <li>
-            <Link to="/zillow-group">Zillow Group</Link>
-          </li>
-          <li>
-            <Link to="/yahoo">Yahoo</Link>
-          </li>
-          <li>
-            <Link to="/modus-create">Modus Create</Link>
-          </li>
+          <Videos/>
         </ul>
 
         <Switch>
