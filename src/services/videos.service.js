@@ -8,11 +8,3 @@ export const getVideoIndex = () => {
 			err => err	
 		)
 }
-
-export const getVideoByName = (fileName) => {
-	return axios.get(API_URL+fileName)
-		.then(
-			res => res,
-			err => err	
-		)
-}

@@ -7,6 +7,8 @@ import {
   Link,
   useParams
 } from "react-router-dom";
+//import Home from './views/Home'
+import Home from './views/Home'
 
 function App() {
   return (
@@ -33,6 +35,7 @@ function App() {
             <Child />
           </Route>
         </Switch>
+        <Home />
       </div>
     </Router>
   );

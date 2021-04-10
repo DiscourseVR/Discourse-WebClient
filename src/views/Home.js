@@ -1,15 +1,13 @@
 import React from 'react'
-import { getVideoByName, getVideoIndex } from '../services/videos.service'
+import { getVideoIndex } from '../services/videos.service'
 
-export function Home() {
+export default function Home() {
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>DiscourseVR</h1>
+    <div>
+    <h1>DiscourseVR</h1>
 
-        <button onClick={makeRequest}>get!</button>
-      </header>
+    <button onClick={makeRequest}>get!</button>
     </div>
   )
 }
@@ -17,7 +15,6 @@ export function Home() {
 async function makeRequest(e) {
   e.preventDefault()
   const index = await getVideoIndex()
-  const res = await getVideoByName(index[0].name)
-  console.log(res)
+  console.log(index)
   
 }
