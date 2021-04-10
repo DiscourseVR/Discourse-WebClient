@@ -1,1 +1,1 @@
-export const API_URL = "https://files.discoursevr.space/"
+export const API_URL = "https://files.discoursevr.space"

@@ -1,5 +1,6 @@
 import React from 'react'
 import { getVideoIndex } from '../services/videos.service'
+import VideoPlayer from '../components/VideoPlayer'
 
 export default function Home() {
   return (
@@ -8,8 +9,7 @@ export default function Home() {
 
       <button onClick={makeRequest}>get!</button>
 
-      <video src='https://files.discoursevr.space/vids/2021-04-10-09-24-16.mp4' autoPlay muted>
-      </video>
+      <VideoPlayer vidUrl='https://files.discoursevr.space/vids/2021-04-10-14-17-33.mp4'></VideoPlayer>
     </div>
   )
 }
